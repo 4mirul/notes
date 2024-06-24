@@ -1,0 +1,8 @@
+Google.Drive
+Microsoft.DotNet.DesktopRuntime.7
+Microsoft.DotNet.Framework.DeveloperPack_4
+Microsoft.DotNet.Runtime.7
+Microsoft.DotNet.SDK.7
+Microsoft.VisualStudio.2022.Community.Preview
+Microsoft.VisualStudioCode
+Mozilla.Firefox.DeveloperEdition
