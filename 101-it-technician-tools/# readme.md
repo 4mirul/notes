@@ -1,40 +1,39 @@
 # 101 Technician Tools list
 
-[battery-report](https://gist.githubusercontent.com/4mirul/4aef7b0f34425469d268ea07204fee8c/raw/b84b0fbf6738dbb6f6146f9b03c6ab182c1b0040/battery-report.bat)
-
-[get-sn](https://gist.githubusercontent.com/4mirul/4aef7b0f34425469d268ea07204fee8c/raw/b84b0fbf6738dbb6f6146f9b03c6ab182c1b0040/get-sn.bat) 
-
-- Rufus
-- 7zip
-- SysInternalsSuite
-- TreeSizeFree
-- AquaKeyTest
-- CrystalDiskInfo
-- Cpu-Z
-- HWMonitor
-- GPU-Z
-- Bluescreenview
-- Batteryinfoview
-- Prime95
-- memtest86
-- Malwarebytes Free
-- Gnome Partition Editor
-- HiJackThis
-- imgburn
-- wireshark
-- virtualbox
-- veracrypt
-- nmap
-- metasploit
-- GifCam
-- HWInfo
-- Carnac
-- HijackThis
-- NoteBookFanControl
-- PENetwork
-- ShareX
-- https://bluetoothinstaller.com/bluetooth-command-line-tools
-
-[nirsoft](https://www.nirsoft.net/utils/)
-
-[cooltools](https://www.totalsem.com/cooltools/)
+- [Basic AutoHotkey](./tech-shortcut.ahk)
+- [battery-report](./battery-report.bat)
+- [get-sn](./get-sn.bat) 
+- [Rufus](https://rufus.ie/)
+- [7zip](https://www.7-zip.org/)
+- [Sysinternals Utilities](https://learn.microsoft.com/en-us/sysinternals/downloads/)
+- [TreeSizeFree](https://www.jam-software.com/treesize_free)
+- [WizTree](https://www.diskanalyzer.com/)
+- [AquaKeyTest](https://geekhack.org/index.php?topic=34670.0)
+- [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/)
+- [Cpu-Z](https://www.cpuid.com/softwares/cpu-z.html)
+- [HWMonitor](https://www.cpuid.com/softwares/hwmonitor.html)
+- [GPU-Z](https://www.techpowerup.com/gpuz/)
+- [Bluescreenview](https://www.nirsoft.net/utils/blue_screen_view.html)
+- [Batteryinfoview](https://www.nirsoft.net/utils/battery_information_view.html)
+- [Prime95](https://www.guru3d.com/download/prime95-download/)
+- [memtest86](https://www.memtest86.com/)
+- [Malwarebytes Free](https://www.malwarebytes.com/mwb-download)
+- [Gnome Partition Editor](https://gparted.org/)
+- [HiJackThis](https://www.majorgeeks.com/files/details/hijackthis.html)
+- [imgburn](https://www.imgburn.com/)
+- [wireshark](https://www.wireshark.org/)
+- [veracrypt](https://www.veracrypt.fr/code/VeraCrypt/)
+- [nmap](https://nmap.org/)
+- [metasploit](https://www.metasploit.com/)
+- [GifCam](https://blog.bahraniapps.com/gifcam/)
+- [HWInfo](https://www.hwinfo.com/)
+- [Carnac](http://code52.org/carnac/)
+- [HijackThis](https://www.majorgeeks.com/files/details/hijackthis.html)
+- [NoteBookFanControl](https://github.com/hirschmann/nbfc)
+- [PENetwork](https://www.penetworkmanager.de/)
+- [ShareX](https://getsharex.com/)
+- [ProduKey](https://www.nirsoft.net/utils/product_cd_key_viewer.html)
+- [Bluetooth command line tools](https://bluetoothinstaller.com/bluetooth-command-line-tools)
+- [SystemRescue](https://www.system-rescue.org/)
+- [nirsoft](https://www.nirsoft.net/utils/)
+- [Mike Meyers cooltools](https://www.totalsem.com/cooltools/)
