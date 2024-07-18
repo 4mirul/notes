@@ -12,7 +12,13 @@ Install and can access it using other machine at https://192.168.0.105:8006/
 
 Remove Enterprise Repositories under `Node > Updates > Repositories` and update all packages
 
-### Optional
+### Best with Proxmox
+
+`wireguard`
+
+`shellinabox`
+
+`cockpit`
 
 `vim`
 
