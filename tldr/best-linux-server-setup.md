@@ -12,3 +12,9 @@ tags:
 - debain
 - ufw
 - docker
+- wireguard manual setup
+- glances, netdata
+- ntfy
+- webtop
+- pihole
+- pterodactyl
