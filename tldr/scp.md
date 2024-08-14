@@ -1,8 +1,9 @@
 ---
 tags:
-  - tldr
-  - linux
-  - 2024-08
+- work-in-progress
+- tldr
+- linux
+- 2024-08
 ---
 # SCP Command to Securely Transfer Files Between Hosts
 
