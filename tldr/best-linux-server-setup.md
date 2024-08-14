@@ -13,7 +13,7 @@ tags:
 - ufw
 - docker
 - wireguard manual setup
-- glances, netdata
+- glances, netdata or just cacti munin or just full grafana
 - ntfy
 - webtop
 - pihole
