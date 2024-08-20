@@ -14,7 +14,7 @@ tags:
 - remote ssh
 - ohmyzsh
 - ufw
-- docker enable journald for netdata and enable metric
+- docker enable journald for netdata and enable metric, perfect .env file
   - webtop for vscode remotely and for remote ssh
   - metube for download youtube
   - database and webui?, mysql mariadb postgres mongodb redis elasticsearchdb and other db
