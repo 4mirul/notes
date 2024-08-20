@@ -9,12 +9,47 @@ tags:
 
 # Best linux server setup
 
-- debain
+- debian
+- create local user with admin right
+- remote ssh
+- ohmyzsh
 - ufw
-- docker
-- wireguard manual setup
+- docker enable journald for netdata and enable metric
+  - webtop for vscode remotely and for remote ssh
+  - metube for download youtube
+  - database and webui?, mysql mariadb postgres mongodb redis elasticsearchdb and other db
+  - swag/traefik
+  - dozzle
+  - grafana
+  - servarr
+  - wordpress
+  - flame
+  - webtop
+  - prometheus and all exporter? alertmanager
+  - logspout
+  - ntfy
+  - dufs/filebrowser
+  - ttrss
+  - drawio
+  - authentik propersetup
+  - asf
+  - znc
+  - autoheal
+  - rustdesk server
+  - hedgedoc
+  - watchtower
+  - pihole
+  - discord irc
+  - portainer
+  - cloudflare-ddns
+  - jellyfin
+- wireguard manual setup or https://github.com/angristan/wireguard-install and manual setup on client
 - glances, netdata or just cacti munin or just full grafana
-- ntfy
-- webtop
 - pihole
 - pterodactyl
+- samba
+- wakatime
+- webmin
+- check installed list txt file
+- jellyfin not docker
+- shell in a box
