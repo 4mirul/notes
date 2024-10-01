@@ -14,7 +14,7 @@ tags:
 - create debian vm, download debian at [link](https://www.debian.org/distrib/)
 - enable admin right for user, enable ssh on debian and proxmox
 - remote ssh with key, disable password
-- ohmyzsh with plugins (wakatime git sudo docker docker-compose history z colored-man-pages debian command-not-found cp themes)
+- ohmyzsh with plugins (git sudo docker docker-compose history z colored-man-pages debian command-not-found cp themes)
 - ufw
 - docker install on debian [link](https://docs.docker.com/engine/install/debian/)
 - enable `metrics-address` and `journald` for docker
@@ -42,7 +42,8 @@ UUID=xxxxxxxxxxxxxxxxx	/mnt/disk0	ntfs	defaults,noatime,uid=1000,gid=1000,umask=
 UUID=xxxxxxxxxxxxxxxxx	/mnt/disk1	ntfs	defaults,noatime,uid=1000,gid=1000,umask=022	0	2
 ```
 
-- `code tunnel` at [link](https://github.com/4mirul/notes/blob/ac3bbb164bcd7fc1991562d2d3f1837eb900bcb2/linux/vscode-tunnel.md)  
+- `code tunnel` at [link](https://github.com/4mirul/notes/blob/ac3bbb164bcd7fc1991562d2d3f1837eb900bcb2/linux/vscode-tunnel.md)
+- up compose watchtower, cloudflare-ddns
 
 - docker enable journald for netdata and enable metric, perfect .env file
   - webtop for vscode remotely and for remote ssh
