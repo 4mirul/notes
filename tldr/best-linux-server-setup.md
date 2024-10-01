@@ -20,9 +20,30 @@ tags:
 - enable `metrics-address` and `journald` for docker
 - mount other disk to vm refer [link](https://pve.proxmox.com/wiki/Passthrough_Physical_Disk_to_Virtual_Machine_(VM))
   - install ntfs-3g for ntfs disk
-  
+  - `/etc/fstab` for automount disk during boot
+  - below example
 
-  
+```fstab
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# systemd generates mount units based on this file, see systemd.mount(5).
+# Please run 'systemctl daemon-reload' after making changes here.
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/sda1 during installation
+UUID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx /               ext4    errors=remount-ro 0       1
+# swap was on /dev/sda5 during installation
+UUID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx none            swap    sw              0       0
+UUID=xxxxxxxxxxxxxxxxx	/mnt/disk0	ntfs	defaults,noatime,uid=1000,gid=1000,umask=022	0	2
+UUID=xxxxxxxxxxxxxxxxx	/mnt/disk1	ntfs	defaults,noatime,uid=1000,gid=1000,umask=022	0	2
+```
+
+- `code tunnel` at [link](https://github.com/4mirul/notes/blob/ac3bbb164bcd7fc1991562d2d3f1837eb900bcb2/linux/vscode-tunnel.md)  
+
 - docker enable journald for netdata and enable metric, perfect .env file
   - webtop for vscode remotely and for remote ssh
   - metube for download youtube
