@@ -17,6 +17,7 @@ tags:
 - ohmyzsh with plugins (git sudo docker docker-compose history z colored-man-pages debian command-not-found cp themes)
 - ufw
 - docker install on debian [link](https://docs.docker.com/engine/install/debian/)
+- sudo usermod -a -G docker $USER
 - enable `metrics-address` and `journald` for docker
 - mount other disk to vm refer [link](https://pve.proxmox.com/wiki/Passthrough_Physical_Disk_to_Virtual_Machine_(VM))
   - install ntfs-3g for ntfs disk
