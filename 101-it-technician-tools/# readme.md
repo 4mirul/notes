@@ -1,4 +1,4 @@
-# 101 Technician Tools list
+# 101 PC Technician Tools list
 
 - [Basic AutoHotkey](./tech-shortcut.ahk)
 - [battery-report](./battery-report.bat)
@@ -37,3 +37,4 @@
 - [SystemRescue](https://www.system-rescue.org/)
 - [nirsoft](https://www.nirsoft.net/utils/)
 - [Mike Meyers cooltools](https://www.totalsem.com/cooltools/)
+- [Fan Control](https://getfancontrol.com/)

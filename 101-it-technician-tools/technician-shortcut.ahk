@@ -21,5 +21,5 @@ return
 
 ;example2
 $^!4::
-run, % "http://itdms.intel.com/#/"
+run, % "https://duckduckgo.com/"
 return
