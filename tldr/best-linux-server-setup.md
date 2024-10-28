@@ -15,7 +15,7 @@ tags:
 - enable admin right for user, enable ssh on debian and proxmox
 - remote ssh with key, disable password
 - ohmyzsh with plugins (git sudo docker docker-compose history z colored-man-pages debian command-not-found cp themes)
-- ufw
+- ufw, not working for docker app
 - docker install on debian [link](https://docs.docker.com/engine/install/debian/)
 - sudo usermod -a -G docker $USER
 - enable `metrics-address` and `journald` for docker
@@ -44,7 +44,9 @@ UUID=xxxxxxxxxxxxxxxxx	/mnt/disk1	ntfs	defaults,noatime,uid=1000,gid=1000,umask=
 ```
 
 - `code tunnel` at [link](https://github.com/4mirul/notes/blob/ac3bbb164bcd7fc1991562d2d3f1837eb900bcb2/linux/vscode-tunnel.md)
-- up compose watchtower, cloudflare-ddns
+- up compose watchtower, cloudflare-ddns, swag, authelia, redis, 
+- logspout
+
 
 - docker enable journald for netdata and enable metric, perfect .env file
   - webtop for vscode remotely and for remote ssh

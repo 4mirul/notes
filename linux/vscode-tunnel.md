@@ -9,3 +9,5 @@
 `code tunnel service log`
 
 `code tunnel service uninstall`
+
+Tip: run `sudo loginctl enable-linger $USER` to ensure the service stays running after you disconnect.
