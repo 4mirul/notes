@@ -14,3 +14,6 @@ tags:
 - `git clone [url]` : clone the repo using https/ssh. if using SSH method, before clone must do 4mirul/notes/tldr/securely-connect-host-to-repo-manager.md
 - `git add [file]` : add file for the commit
 - `git add .` : add all files/changes for the commit
+- `git reset [file]` : remove the file from the commit
+- `git reset` : remove all changes from the commit
+- `git reset HEAD~` : remove last commit
