@@ -1,6 +1,6 @@
 # 101 PC Technician Tools list
 
-- [Basic AutoHotkey](./tech-shortcut.ahk)
+- [Basic AutoHotkey](./technician-shortcut.ahk)
 - [battery-report](./battery-report.bat)
 - [get-sn](./get-sn.bat) 
 - [Rufus](https://rufus.ie/)
@@ -38,3 +38,4 @@
 - [nirsoft](https://www.nirsoft.net/utils/)
 - [Mike Meyers cooltools](https://www.totalsem.com/cooltools/)
 - [Fan Control](https://getfancontrol.com/)
+- [WizTree](https://diskanalyzer.com/)
