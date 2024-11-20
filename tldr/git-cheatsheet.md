@@ -17,3 +17,5 @@ tags:
 - `git reset [file]` : remove the file from the commit
 - `git reset` : remove all changes from the commit
 - `git reset HEAD~` : remove last commit
+- `git diff` : check different
+- `git commit -m "[message]"` : commit the staged with message
