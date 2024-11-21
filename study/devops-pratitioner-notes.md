@@ -56,3 +56,11 @@ CMD ["sh", "-c", "python manage.py makemigrations DockerDevops && python manage.
 
 - do `do httpd`
 - docker compose
+
+22-Nov-24
+
+- CI/CD - continues integration/container delivery
+- CD - gitlab, github action, etc
+- BUILD
+- TEST
+- DEPLOY
