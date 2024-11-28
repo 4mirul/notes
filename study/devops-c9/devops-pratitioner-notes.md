@@ -64,3 +64,33 @@ CMD ["sh", "-c", "python manage.py makemigrations DockerDevops && python manage.
 - BUILD
 - TEST
 - DEPLOY
+
+26-Nov-24
+
+| Feature                  | Docker                                   | Kubernetes                            |
+|--------------------------|------------------------------------------|---------------------------------------|
+| **Primary Purpose**       | Containerization (Build, Ship, Run)      | Container Orchestration (Manage, Scale, Deploy) |
+| **Scope**                 | Manages containers on a single host      | Manages containers across clusters of machines |
+| **Usage**                 | Ideal for creating and running containers locally or on a single host | Ideal for managing containers in large, production environments |
+| **Core Component**        | Docker Engine, Docker CLI, Docker Hub    | Kubernetes Cluster, Pods, Deployments, Services |
+| **Scaling**               | Manually scale containers                | Auto-scaling of containers based on load |
+| **Self-Healing**          | No built-in self-healing                 | Automatically restarts failed containers, reschedules them |
+| **Networking**            | Basic networking (bridge, host, etc.)    | Advanced networking, with services, ingress, DNS |
+| **Rolling Updates**       | Manual updates with downtime             | Fully automated rolling updates with zero downtime |
+| **Storage**               | Limited to volumes or bind mounts        | Persistent Volumes (with more flexibility and orchestration) |
+| **Dependency**            | Requires container runtimes (Docker, containerd, etc.) | Uses container runtimes (e.g., Docker, containerd) but can work with multiple runtimes |
+| **Configuration**         | Dockerfile for image creation            | YAML files for defining infrastructure (Deployments, Services, etc.) |
+| **Example Use Case**      | Running a single app locally or in small scale | Managing microservices at scale, automated deployments in the cloud |
+
+- manifest = yml file
+- pod?
+- service?
+- deployment?
+- `minikube service nginx-service` to expose the network because minikube is a container
+- create pod
+- create service
+- check the clusterip, nodeport, etc
+- create deployment
+- put pod inside deployment
+- check pod inside deployment, check service inside deployment
+- assignment: 
