@@ -18,18 +18,17 @@ spec:
       containers:
         - name: mysql
           image: mysql:latest
-          resources:
-            requests:
-              memory: "64Mi"
-              cpu: "250m"
-            limits:
-              memory: "128Mi"
-              cpu: "500m"
           env:
             - name: MYSQL_ROOT_PASSWORD
-              value: "123root"
+              valueFrom:
+                secretKeyRef:
+                  name: my-secret
+                  key: mysql_root_password
             - name: MYSQL_DATABASE
-              value: "dbtest"
+              valueFrom:
+                configMapKeyRef:
+                  name: my-configmap
+                  key: test_database
 ---
 apiVersion: v1
 kind: Service
