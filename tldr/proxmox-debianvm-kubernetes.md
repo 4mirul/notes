@@ -42,6 +42,7 @@ tags:
 - for workers, use link to join the control plane. the master can generate the link at command `kubeadm token create --print-join-command`
 - 3 command from controlplane also need to do for workers. `.kube/config`
 - for single controlplane do `kubectl taint nodes <node_name> node-role.kubernetes.io/control-plane:NoSchedule-`
+- `kubectl taint nodes debian-k8s node-role.kubernetes.io/control-plane:NoSchedule-`
 
 ```sh
 mkdir -p $HOME/.kube
