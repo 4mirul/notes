@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloud-app01
+  namespace: ca2
+  labels:
+    app: cloud-app01
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cloud-app01
+  template:
+    metadata:
+      labels:
+        app: cloud-app01
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.23.3-alpine
+        ports:
+        - containerPort: 80
+
+# kubectl run -n ca2 -i --tty --restart=Never --rm netutil --image cloudacademydevops/networkutils:v2 -- curl -I cloud-app-svc
