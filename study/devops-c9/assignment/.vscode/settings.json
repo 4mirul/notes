@@ -1,0 +1,6 @@
+{
+    "yaml.schemas": {
+        "file:///home/yuu/.vscode/extensions/docsmsft.docs-yaml-1.0.5/dist/toc.schema.json": "/toc\\.yml/i",
+        "kubernetes://schema/apps/v1%40statefulset": "file:///home/yuu/repos/notes/study/devops-c9/assignment/assignment-2.yaml"
+    }
+}
