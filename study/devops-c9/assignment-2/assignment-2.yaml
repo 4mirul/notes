@@ -3,6 +3,8 @@ kind: StorageClass
 metadata:
   name: local-storage
 provisioner: kubernetes.io/no-provisioner # indicates that this StorageClass does not support automatic provisioning
+reclaimPolicy: Retain
+allowVolumeExpansion: true
 volumeBindingMode: WaitForFirstConsumer
 ---
 apiVersion: v1
@@ -18,7 +20,7 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/mnt/mongo/data/db"
+    path: "/mnt/mongo/db"
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -57,21 +59,14 @@ spec:
         image: mongo:latest
         ports:
         - containerPort: 27017
-        volumeMounts:
-        - mountPath: "/data/db"
-          name: mongo-pv
         env:
         - name: MONGO_INITDB_ROOT_USERNAME
           value: "root"
         - name: MONGO_INITDB_ROOT_PASSWORD
           value: "123root"
-        resources:
-          requests:
-            cpu: "250m"
-            memory: "256Mi"
-          limits:
-            cpu: "500m"
-            memory: "512Mi"
+        volumeMounts:
+        - mountPath: "/data/db"
+          name: mongo-pv
       volumes:
       - name: mongo-pv
         persistentVolumeClaim:
@@ -127,13 +122,6 @@ spec:
           value: "123root"
         - name: ME_CONFIG_MONGODB_SERVER
           value: "mongo-svc"
-        resources:
-          requests:
-            cpu: "250m"
-            memory: "256Mi"
-          limits:
-            cpu: "500m"
-            memory: "512Mi"
 ---
 apiVersion: v1
 kind: Service
