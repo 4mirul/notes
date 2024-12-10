@@ -1,3 +1,5 @@
+# https://github.com/pelthepu/Kubernetes/tree/master/resources/statefulsets
+---
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
@@ -22,6 +24,10 @@ spec:
               value: "root"
             - name: MONGO_INITDB_ROOT_PASSWORD
               value: "123root"
+          command:
+            - mongod
+            - "--bind_ip_all"
+            - --config=/etc/mongo/mongodb.conf
           volumeMounts:
             - name: mongo-volume
               mountPath: /data/db
