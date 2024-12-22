@@ -134,8 +134,8 @@ Refer [Arch_boot_process](https://wiki.archlinux.org/title/Arch_boot_process#Boo
 
 ```sh
 pacman -S grub efibootmgr
-grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=GRUB #replace esp, /boot for this guide
-grub-mkconfig -o /boot/grub/grub.cfg
+grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=GRUB #replace esp, /boot for example
+grub-mkconfig -o /boot/grub/grub.cfg 
 ```
 
 ## Before restart

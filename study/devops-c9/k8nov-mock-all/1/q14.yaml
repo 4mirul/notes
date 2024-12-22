@@ -1,8 +1,12 @@
+# `kubectl create ns qq3`
+# `kubectl apply -f q14.yaml`
+# `kubectl set image deployment nginx-deployment nginx=nginx:alpine -n qq3`
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: lab-deployment
-  namespace: qq2
+  name: nginx-deployment
+  namespace: qq3
   labels:
     app: nginx
 spec:
@@ -20,6 +24,4 @@ spec:
         image: nginx:1.14.2
         ports:
         - containerPort: 80
-
-# then scale with with `kubectl scale deployment lab-deployment --replicas=4 -n qq2`
 

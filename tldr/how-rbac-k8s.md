@@ -17,5 +17,5 @@ tags:
 - `kubectl config set-context yuu-kubernetes --cluster=kubernetes --user=yuu --namespace=default`
  
 - `kubectl config get-contexts`
-- `kubectl config use-context`
+- `kubectl config use-context NAME`
 - `kubectl api-resources -o wide | grep pod`

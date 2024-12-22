@@ -1,12 +1,16 @@
+# `kubectl create ns qq2`
+# `kubectl apply -f q2.yaml`
+# `kubectl scale --current-replicas=1 --replicas=4 deployment/lab-deployment -n qq2`
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: lab-deployment
   namespace: qq2
   labels:
     app: nginx
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: nginx

@@ -1,0 +1,39 @@
+# `kubectl create ns ca2`
+# `kubectl apply -f q8.yaml`
+# `kubectl run -n ca2 -i --tty --restart=Never --rm netutil --image cloudacademydevops/networkutils:v2 -- curl -I cloud-app-svc`
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloud-app01
+  namespace: ca2
+  labels:
+    app: nginx
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.23.3-alpine
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cloud-app-svc
+  namespace: ca2
+spec:
+  ports:
+    - name: http
+      protocol: TCP
+      port: 8080
+      targetPort: 80
+
