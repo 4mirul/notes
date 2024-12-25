@@ -1,0 +1,216 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: local-storage
+provisioner: rancher.io/local-path
+volumeBindingMode: WaitForFirstConsumer
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: task-pv-volume
+  labels:
+    type: local
+spec:
+  storageClassName: local-storage
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/mnt/data"
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: task-pv-claim
+  namespace: postgres
+spec:
+  storageClassName: local-storage
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-configmap
+  namespace: postgres
+data:
+  PGADMIN_DEFAULT_EMAIL: amirul@admin.com
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: postgres-secret
+  namespace: postgres
+data:
+  POSTGRES_DB: cG9zdGdyZXMK # postgres
+  POSTGRES_USER: YWRtaW4K # admin
+  POSTGRES_PASSWORD: MTIzP3Bhc3N3b3JkCg== # 123?password
+  PGADMIN_DEFAULT_PASSWORD: MTIzP3Bhc3N3b3JkCg== # 123?password
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres
+  namespace: postgres
+  labels:
+    app: postgres
+spec:
+  ports:
+  - port: 80
+    name: postgres
+  clusterIP: None
+  selector:
+    app: postgres-port
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: postgres
+  namespace: postgres
+spec:
+  selector:
+    matchLabels:
+      app: postgres
+  serviceName: postgres
+  replicas: 5
+  minReadySeconds: 10
+  template:
+    metadata:
+      labels:
+        app: postgres
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+      - name: postgres
+        image: postgres:latest
+        ports:
+        - containerPort: 5432
+          name: postgres-port
+        volumeMounts:
+        - name: postgres
+          mountPath: /var/lib/postgresql/data
+        env:
+        - name: POSTGRES_DB
+          valueFrom:
+            secretKeyRef:
+              name: postgres-secret
+              key: POSTGRES_DB
+        - name: POSTGRES_USER
+          valueFrom:
+            secretKeyRef:
+              name: postgres-secret
+              key: POSTGRES_USER
+        - name: POSTGRES_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: postgres-secret
+              key: POSTGRES_PASSWORD
+        readinessProbe:
+          tcpSocket:
+            port: 5432
+          initialDelaySeconds: 15
+          periodSeconds: 10
+        livenessProbe:
+          tcpSocket:
+            port: 5432
+          initialDelaySeconds: 15
+          periodSeconds: 10
+      volumes:
+      - name: postgres
+        persistentVolumeClaim:
+          claimName: task-pv-claim
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pgadmin
+  namespace: postgres
+  labels:
+    app: pgadmin
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: pgadmin
+  template:
+    metadata:
+      labels:
+        app: pgadmin
+    spec:
+      containers:
+      - name: pgadmin
+        image: elestio/pgadmin:latest
+        ports:
+        - containerPort: 80
+        env:
+        - name: PGADMIN_DEFAULT_EMAIL
+          valueFrom:
+            configMapKeyRef:
+              name: postgres-configmap
+              key: PGADMIN_DEFAULT_EMAIL
+        - name: PGADMIN_DEFAULT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: postgres-secret
+              key: PGADMIN_DEFAULT_PASSWORD
+        livenessProbe:
+          exec:
+            command:
+            - curl
+            - /
+          initialDelaySeconds: 5
+          periodSeconds: 5
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres-svc
+  namespace: postgres
+spec:
+  selector:
+    app: postgres
+  ports:
+  - name: postgres-port
+    protocol: TCP
+    port: 5432
+    targetPort: 5432
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pgadmin-svc
+  namespace: postgres
+spec:
+  selector:
+    app: pgadmin
+  ports:
+  - name: http-pgadmin
+    protocol: TCP
+    port: 80
+    targetPort: 80
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: minimal-ingress
+  namespace: postgres
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx-example
+  rules:
+  - host: torqueserver.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: pgadmin-service
+            port:
+              number: 80

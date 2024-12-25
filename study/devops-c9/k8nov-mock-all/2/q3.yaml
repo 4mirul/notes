@@ -1,27 +1,27 @@
 # `kubectl create ns qq3`
-# `kubectl apply -f q15.yaml`
-# `kubectl set image deployment apache-deployment apache=httpd:bookworm -n qq3`
+# `kubectl apply -f q3.yaml`
+# `kubectl set image deployment nginx-deployment nginx=nginx:alpine -n qq3`
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: apache-deployment
+  name: nginx-deployment
   namespace: qq3
   labels:
-    app: apache
+    app: nginx
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: apache
+      app: nginx
   template:
     metadata:
       labels:
-        app: apache
+        app: nginx
     spec:
       containers:
-      - name: apache
-        image: httpd:latest
+      - name: nginx
+        image: nginx:latest
         ports:
         - containerPort: 80
 

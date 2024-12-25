@@ -1,6 +1,7 @@
 # `kubectl create ns qq3`
 # `kubectl apply -f q15.yaml`
 # `kubectl set image deployment apache-deployment apache=httpd:bookworm -n qq3`
+# `kubectl rollout undo deployment apache-deployment -n qq3`
 ---
 apiVersion: apps/v1
 kind: Deployment

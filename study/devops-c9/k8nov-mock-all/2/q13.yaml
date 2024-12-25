@@ -1,0 +1,1 @@
+# `kubectl scale --replicas=6 sts/mysql -n datastorage `

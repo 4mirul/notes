@@ -1,0 +1,44 @@
+# `kubectl apply -f q5.yaml`
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: q5
+data:
+  api_link: link
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: secret
+data:
+  username: username
+  password: password
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: apache
+spec:
+  containers:
+  - name: httpd
+    image: httpd:latest
+    ports:
+    - containerPort: 80
+    env:
+      - name: api_link
+        valueFrom:
+          configMapKeyRef:
+            name: q5
+            value: api_link
+      - name: username
+        valueFrom:
+          secretKeyRef:
+            name: secret
+            key: username
+      - name: password
+        valueFrom:
+          secretKeyRef:
+            name: secret
+            key: password
+
