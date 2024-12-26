@@ -2,7 +2,7 @@ apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   name: local-storage
-provisioner: rancher.io/local-path
+provisioner: kubernetes.io/no-provisioner
 volumeBindingMode: WaitForFirstConsumer
 ---
 apiVersion: v1
@@ -206,7 +206,7 @@ spec:
   - hosts:
     - torqueserver.com
     secretName: example-tls
-  ingressClassName: nginx-example
+  ingressClassName: nginx
   rules:
   - host: torqueserver.com
     http:
