@@ -61,7 +61,7 @@ metadata:
     app: postgres
 spec:
   ports:
-  - port: 80
+  - port: 5432
     name: postgres
   clusterIP: None
   selector:
@@ -165,20 +165,6 @@ spec:
             - /
           initialDelaySeconds: 5
           periodSeconds: 5
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: postgres-svc
-  namespace: postgres
-spec:
-  selector:
-    app: postgres
-  ports:
-  - name: postgres-port
-    protocol: TCP
-    port: 5432
-    targetPort: 5432
 ---
 apiVersion: v1
 kind: Service
