@@ -39,168 +39,152 @@ metadata:
   name: mongodb-configmap
   namespace: mongodb
 data:
-  PGADMIN_DEFAULT_EMAIL: amirul@admin.com
+  ME_CONFIG_MONGODB_SERVER: mongodb
 ---
 apiVersion: v1
 kind: Secret
 metadata:
-  name: postgres-secret
+  name: mongodb-secret
   namespace: mongodb
 data:
-  POSTGRES_DB: cG9zdGdyZXMK # postgres
   MONGO_INITDB_ROOT_USERNAME: YWRtaW4K # admin
   MONGO_INITDB_ROOT_PASSWORD: MTIzP3Bhc3N3b3JkCg== # 123?password
-  PGADMIN_DEFAULT_PASSWORD: MTIzP3Bhc3N3b3JkCg== # 123?password
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: postgres
+  name: mongodb
   namespace: mongodb
   labels:
-    app: postgres
+    app: mongodb
 spec:
   ports:
-  - port: 80
-    name: postgres
+  - port: 27017
+    name: mongodb
   clusterIP: None
   selector:
-    app: postgres-port
+    app: mongodb-port
 ---
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: postgres
+  name: mongodb
   namespace: mongodb
 spec:
   selector:
     matchLabels:
-      app: postgres
-  serviceName: postgres
+      app: mongodb
+  serviceName: mongodb
   replicas: 5
   minReadySeconds: 10
   template:
     metadata:
       labels:
-        app: postgres
+        app: mongodb
     spec:
       terminationGracePeriodSeconds: 10
       containers:
-      - name: postgres
-        image: postgres:latest
+      - name: mongodb
+        image: mongo
         ports:
-        - containerPort: 5432
-          name: postgres-port
+        - containerPort: 27017
+          name: mongodb-port
         volumeMounts:
-        - name: postgres
-          mountPath: /var/lib/postgresql/data
+        - name: mongodb
+          mountPath: /data/db
         env:
-        - name: POSTGRES_DB
+        - name: MONGO_INITDB_ROOT_USERNAME
           valueFrom:
             secretKeyRef:
-              name: postgres-secret
-              key: POSTGRES_DB
-        - name: POSTGRES_USER
+              name: mongodb-secret
+              key: MONGO_INITDB_ROOT_USERNAME
+        - name: MONGO_INITDB_ROOT_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: postgres-secret
-              key: POSTGRES_USER
-        - name: POSTGRES_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: postgres-secret
-              key: POSTGRES_PASSWORD
+              name: mongodb-secret
+              key: MONGO_INITDB_ROOT_PASSWORD
         readinessProbe:
           tcpSocket:
-            port: 5432
+            port: 27017
           initialDelaySeconds: 15
           periodSeconds: 10
         livenessProbe:
           tcpSocket:
-            port: 5432
+            port: 27017
           initialDelaySeconds: 15
           periodSeconds: 10
       volumes:
-      - name: postgres
+      - name: mongodb
         persistentVolumeClaim:
           claimName: task-pv-claim
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pgadmin
+  name: mongo-express
   namespace: mongodb
   labels:
-    app: pgadmin
+    app: mongo-express
 spec:
   replicas: 5
   selector:
     matchLabels:
-      app: pgadmin
+      app: mongo-express
   template:
     metadata:
       labels:
-        app: pgadmin
+        app: mongo-express
     spec:
       containers:
-      - name: pgadmin
-        image: elestio/pgadmin:latest
+      - name: mongo-express
+        image: mongo-express:latest
         ports:
         - containerPort: 80
         env:
-        - name: PGADMIN_DEFAULT_EMAIL
+        - name: ME_CONFIG_MONGODB_SERVER
           valueFrom:
             configMapKeyRef:
-              name: postgres-configmap
-              key: PGADMIN_DEFAULT_EMAIL
-        - name: PGADMIN_DEFAULT_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: postgres-secret
-              key: PGADMIN_DEFAULT_PASSWORD
-        livenessProbe:
-          exec:
-            command:
-            - curl
-            - /
-          initialDelaySeconds: 5
-          periodSeconds: 5
+              name: mongodb-configmap
+              key: ME_CONFIG_MONGODB_SERVER
+        # livenessProbe:
+        #   exec:
+        #     command:
+        #     - curl
+        #     - /
+        #   initialDelaySeconds: 5
+        #   periodSeconds: 5
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: pgadmin-svc
+  name: mongo-express-svc
   namespace: mongodb
 spec:
   selector:
-    app: pgadmin
+    app: mongo-express
   ports:
-  - name: http-pgadmin
-    protocol: TCP
-    port: 80
+  - protocol: TCP
+    port: 8080
     targetPort: 80
+  type: LoadBalancer
 ---
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: minimal-ingress
-  namespace: mongodb
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
-spec:
-  tls:
-  - hosts:
-    - torqueserver.com
-    secretName: example-tls
-  ingressClassName: nginx
-  rules:
-  - host: torqueserver.com
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: pgadmin-service
-            port:
-              number: 80
+# apiVersion: networking.k8s.io/v1
+# kind: Ingress
+# metadata:
+#   name: minimal-ingress
+#   namespace: mongodb
+#   annotations:
+#     nginx.ingress.kubernetes.io/rewrite-target: /
+# spec:
+#   ingressClassName: nginx
+#   rules:
+#   - host: dashboard.com
+#     http:
+#       paths:
+#       - path: /
+#         pathType: Prefix
+#         backend:
+#           service:
+#             name: mongo-express-svc
+#             port:
+#               number: 80

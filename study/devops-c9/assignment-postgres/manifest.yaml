@@ -113,13 +113,13 @@ spec:
         readinessProbe:
           tcpSocket:
             port: 5432
-          initialDelaySeconds: 15
-          periodSeconds: 10
+          initialDelaySeconds: 5
+          periodSeconds: 5
         livenessProbe:
           tcpSocket:
             port: 5432
-          initialDelaySeconds: 15
-          periodSeconds: 10
+          initialDelaySeconds: 5
+          periodSeconds: 5
       volumes:
       - name: postgres
         persistentVolumeClaim:
@@ -175,10 +175,10 @@ spec:
   selector:
     app: pgadmin
   ports:
-  - name: http-pgadmin
-    protocol: TCP
+  - protocol: TCP
     port: 80
     targetPort: 80
+  type: LoadBalancer
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
@@ -188,19 +188,15 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
-  tls:
-  - hosts:
-    - torqueserver.com
-    secretName: example-tls
   ingressClassName: nginx
   rules:
-  - host: torqueserver.com
+  - host: dashboard.com
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: pgadmin-service
+            name: pgadmin-svc
             port:
               number: 80
