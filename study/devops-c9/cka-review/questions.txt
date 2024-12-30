@@ -1,0 +1,5 @@
+serviceaccount got? or RBAC is enough.
+
+first question asking about the account. then next question, should be go back to admin kubernetes context. or the questions is continuing related each other.
+
+are there going to be different questions, such as storage mount hostpath. emptydir etc
