@@ -38,7 +38,7 @@ spec:
               topologyKey: "kubernetes.io/minikube"
       containers:
       - name: backend
-        image: ariwesi/timeshee_backend:v1
+        image: ariwesi/timesheet_backend:v1
         ports:
         - containerPort: 8082
         env:
