@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: phpmyadmin
+  labels:
+    app: phpmyadmin
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: phpmyadmin
+  template:
+    metadata:
+      labels:
+        app: phpmyadmin
+    spec:
+      containers:
+      - name: phpmyadmin
+        image: phpmyadmin:alpine
+        ports:
+        - containerPort: 80
+        env:
+        - name: PMA_USER
+          value: "admin"
+        - name: PMA_PASSWORD
+          value: "123admin"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pma-svc
+spec:
+  type: NodePort
+  selector:
+    app: phpmyadmin
+  ports:
+    - port: 8080
+      targetPort: 80
+      nodePort: 30007

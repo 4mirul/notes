@@ -1,0 +1,102 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-svc
+spec:
+  selector:
+    app: backend
+  ports:
+    - protocol: TCP
+      port: 8082
+      targetPort: 8082
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  labels:
+    app: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchExpressions:
+                  - key: "app"
+                    operator: In
+                    values:
+                      - database
+              topologyKey: "kubernetes.io/minikube"
+      containers:
+      - name: backend
+        image: ariwesi/timeshee_backend:v1
+        ports:
+        - containerPort: 8082
+        env:
+        - name: spring.jpa.hibernate.ddl-auto
+          valueFrom:
+            configMapKeyRef:
+              name: myconfigmap
+              key: spring.jpa.hibernate.ddl-auto
+        - name: spring.application.name
+          valueFrom:
+            configMapKeyRef:
+              name: myconfigmap
+              key: spring.application.name
+        - name: spring.datasource.url
+          valueFrom:
+            configMapKeyRef:
+              name: myconfigmap
+              key: spring.datasource.url
+        - name: spring.datasource.username
+          valueFrom:
+            configMapKeyRef:
+              name: myconfigmap
+              key: spring.datasource.username
+        - name: spring.datasource.password
+          valueFrom:
+            configMapKeyRef:
+              name: myconfigmap
+              key: spring.datasource.password
+        - name: spring.datasource.driver-class-name
+          valueFrom:
+            configMapKeyRef:
+              name: myconfigmap
+              key: spring.datasource.driver-class-name
+        - name: spring.jpa.show-sql
+          valueFrom:
+            configMapKeyRef:
+              name: myconfigmap
+              key: spring.jpa.show-sql
+        - name: server.port
+          valueFrom:
+            configMapKeyRef:
+              name: myconfigmap
+              key: server.port
+        readinessProbe:
+          exec:
+            command:
+            - sh
+            - -c
+            - |
+              curl -X POST \
+                -H "Content-Type: application/json" \
+                -d '{"project": "test#", "task": "test", "dateFrom": "", "dateTo": "", "status": "approved", "assignTo": "user1"}' \
+                http://localhost:4200/api/timesheets
+          initialDelaySeconds: 10
+          periodSeconds: 5
+          failureThreshold: 3
+      tolerations:
+      - key: "app"
+        operator: "Equal"
+        value: "frontendandbackend"
+        effect: "NoSchedule"
