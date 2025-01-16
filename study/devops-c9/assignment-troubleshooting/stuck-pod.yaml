@@ -8,4 +8,4 @@ spec:
     - name: nginx
       image: nginx:latest
   nodeSelector:
-    nonexistent-label: "true"
+    disktype: ssd #changed to disktype: ssd and label the node with disktype: ssd
