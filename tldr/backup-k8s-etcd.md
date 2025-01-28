@@ -15,7 +15,7 @@ tags:
 4. 
 
 ```sh
-etcdctl --endpoints 10.2.0.9:2379 \
+etcdctl --endpoints 127.0.0.1:2379 \
   --cert=/etc/kubernetes/pki/etcd/server.crt \
   --key=/etc/kubernetes/pki/etcd/server.key \
   --cacert=/etc/kubernetes/pki/etcd/ca.crt \
@@ -27,4 +27,4 @@ snapshot save ./etcd-backup/etcdbackup.db
 8. `mv ~/member/ /var/lib/etcd/`
 9. `systemctl stop kubelet`
 10. `mv ~/temp_yaml_files/* /etc/kubernetes/manifests/`
-11. `systemctl start kubelet`
+11. `systemctl start kubelet`Q
