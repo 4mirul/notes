@@ -27,4 +27,4 @@ snapshot save ./etcd-backup/etcdbackup.db
 8. `mv ~/member/ /var/lib/etcd/`
 9. `systemctl stop kubelet`
 10. `mv ~/temp_yaml_files/* /etc/kubernetes/manifests/`
-11. `systemctl start kubelet`Q
+11. `systemctl start kubelet`
