@@ -11,17 +11,9 @@ tags:
 
 1. install `etcd-client`, `apt install etcd-client`
 2. `mkdir ~/etcd-backup`
-3. `export ETCDCTL_API=3`
-4. 
-
-```sh
-etcdctl --endpoints 127.0.0.1:2379 \
-  --cert=/etc/kubernetes/pki/etcd/server.crt \
-  --key=/etc/kubernetes/pki/etcd/server.key \
-  --cacert=/etc/kubernetes/pki/etcd/ca.crt \
-snapshot save ./etcd-backup/etcdbackup.db
-```
-5. `etcdctl snapshot restore etcd-backup/etcdbackup.db`
+// 3. `export ETCDCTL_API=3`
+4. `ETCDCTL_API=3 etcdctl --endpoints 127.0.0.1:2379 --cert=/etc/kubernetes/pki/etcd/server.crt --key=/etc/kubernetes/pki/etcd/server.key --cacert=/etc/kubernetes/pki/etcd/ca.crt snapshot save ./etcd-backup/etcdbackup.db`
+5. `ETCDCTL_API=3 etcdctl snapshot restore etcd-backup/etcdbackup.db`
 6. `mkdir ~/temp_yaml_files`
 7. `mv /etc/kubernetes/manifest/* temp_yaml_files`
 8. `mv ~/member/ /var/lib/etcd/`

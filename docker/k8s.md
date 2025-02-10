@@ -7,10 +7,6 @@
 
 ---
 
-## cert-manager
-
----
-
 `kubectl version` - check the client and server version
 
 `kubectl cluster-info` - check cluster info

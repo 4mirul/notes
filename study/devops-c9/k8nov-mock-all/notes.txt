@@ -1,2 +1,0 @@
-1. based on q1 mock exam 9, in exam is it possible  to get question to not use volumeclaimtemplates in sts, normal volumeclaim
-2. if we in mock exam 9 q2, if we use the storageclass default should be okay right?
