@@ -1,0 +1,1 @@
+# Lightweight Arch Linux Alternatives (Void Linux, Artix Linux, etc.)

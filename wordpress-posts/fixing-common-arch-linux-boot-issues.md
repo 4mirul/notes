@@ -1,0 +1,1 @@
+# Fixing Common Arch Linux Boot Issues (GRUB, Kernel Panic, etc.)

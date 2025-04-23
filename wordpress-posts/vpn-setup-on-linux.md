@@ -1,0 +1,1 @@
+# VPN Setup on Linux: WireGuard vs. OpenVPN

@@ -1,0 +1,1 @@
+# How to Scale Applications in Kubernetes (HPA, Cluster Autoscaler)
