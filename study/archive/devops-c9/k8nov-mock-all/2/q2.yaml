@@ -1,0 +1,19 @@
+# `kubectl create ns fullstack`
+# `kubectl apply -f q2.yaml`
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: fullstack
+  namespace: fullstack
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
+  - name: maven
+    image: maven:3.9.9-eclipse-temurin-11
+    ports:
+    - containerPort: 1234
+

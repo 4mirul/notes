@@ -1,0 +1,38 @@
+# `kubectl create ns programming`
+# `kubectl apply -f q4.yaml`
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python
+  namespace: programming
+  labels:
+    app: python
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: python
+  template:
+    metadata:
+      labels:
+        app: python
+    spec:
+      containers:
+      - name: python
+        image: python:3.9.20-slim-bullseye
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: python-service
+  namespace: programming
+spec:
+  selector:
+    app: python
+  ports:
+    - port: 9797
+      targetPort: 80
+  type: LoadBalancer

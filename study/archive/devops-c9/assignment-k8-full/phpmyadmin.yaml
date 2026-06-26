@@ -1,0 +1,57 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: phpmyadmin
+  labels:
+    app: phpmyadmin
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: phpmyadmin
+  template:
+    metadata:
+      labels:
+        app: phpmyadmin
+    spec:
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchLabels:
+                  app: mariadb
+              topologyKey: "kubernetes.io/hostname"
+      containers:
+      - name: phpmyadmin
+        image: phpmyadmin:latest
+        ports:
+        - containerPort: 80
+        env:
+          - name: PMA_USER
+            valueFrom:
+              secretKeyRef:
+                name: my-secret
+                key: PMA_USER
+          - name: PMA_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: my-secret
+                key: PMA_PASSWORD
+          - name: PMA_HOST
+            valueFrom:
+              configMapKeyRef:
+                name: my-config
+                key: PMA_HOST
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: phpmyadmin-service
+spec:
+  type: NodePort
+  selector:
+    app: phpmyadmin
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80

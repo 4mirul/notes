@@ -1,0 +1,24 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: big-corp-app
+spec:
+  template:
+    spec:
+      containers:
+        - name: myapp
+          image: busybox
+          command: ['sh', '-c', 'while true; do echo "app is running" >> /var/log/big-corp-app.log; sleep 1; done']
+          volumeMounts:
+            - name: data
+              mountPath: /var/log
+        - name: sidecar
+          image: busybox
+          command: ['sh', '-c', 'tail -n+1 -F /var/log/big-corp-app.log']
+          volumeMounts:
+            - name: data
+              mountPath: /var/log
+      restartPolicy: Never
+      volumes:
+        - name: data
+          emptyDir: {}

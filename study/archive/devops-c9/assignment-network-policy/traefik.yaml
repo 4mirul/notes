@@ -1,0 +1,87 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: traefik
+  labels:
+    app: traefik
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: traefik
+  template:
+    metadata:
+      labels:
+        app: traefik
+    spec:
+      containers:
+      - name: traefik
+        image: traefik:latest
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+          - name: traefik-config-volume
+            mountPath: /etc/traefik
+      volumes:
+        - name: traefik-config-volume
+          configMap:
+            name: traefik-config
+            items:
+              - key: traefik.yml
+                path: traefik.yml
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: traefik-service
+spec:
+  selector:
+    app: traefik
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+  type: LoadBalancer
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: traefik-network-policy
+  namespace: default
+spec:
+  podSelector:
+    matchLabels:
+      app: traefik
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - ports:
+    - protocol: TCP
+      port: 8080
+  egress:
+  - ports:
+    - protocol: TCP
+      port: 4200
+    - protocol: TCP
+      port: 8080
+    - protocol: TCP
+      port: 3000
+    - protocol: TCP
+      port: 8000
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: traefik-config
+  namespace: default
+data:
+  traefik.yml: |
+    # Docker configuration backend
+    providers:
+      docker:
+        defaultRule: "Host(`{{ trimPrefix `/` .Name }}.docker.localhost`)"
+
+    # API and dashboard configuration
+    api:
+      insecure: true
