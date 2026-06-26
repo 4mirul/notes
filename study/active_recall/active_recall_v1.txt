@@ -59,14 +59,31 @@ make formula.
 don't just think what should i learn, ask your self = how do i make the brain care?
 
 5. the blurting method.
-read, close the notes, recall everything, compare with the notes, repeat.
-active recall, retrieval practice, error correction, encoding memory.
+study normally, close the notes, take paper and write anything  that you can remember; force retrieval, compare with the notes, repeat.
+combine active recall, retrieval practice, error corrections, deep encoding.
+don't spend rereading, spend retrieving.
 
-6. sleeping is our best friend.
-when sleep the brain ..
+6. the environment secretly training the memory.
+the brain attach memory to context. context-dependent learning. so the memory is not just tied to the information but environment/smell/mood/sounds/etc.
+study with distraction/scrolling/etc. the brain will learn the distraction and brain never enter deep encoding mode.
+shallow attention = shallow memory.
+if want faster memorization, protect the first 30mins of study aggressively.
+memory formation require uninterrupted interaction.
 
-7. the interchange.
+7. sleeping is part of memorization.
+the brain not fully memorize while studying but finalize during sleep, especially deep sleep.
+during sleep the brain transfer important information to long term storage.
+don't sacrifice sleep to study. sleep normally. sleep is to stabilize memories.
+if want better retention, study hard materials few hours before sleep then during sleep the brain keep processing even already stop studying.
+
+8. the interleaving.
 4 hours study that, 4 hours study other, 4 hours study this - it's working because trains our brain to quick change.
+brain adapt better with control leaving. the switching forces the brain to reengaging repeatedly.
+
+conclusion, the brain is not bad at memorizing but overloaded with passive information.
+it disappear because never revisited.
+always learning by, what i can recall, what i can explain, what survive after 3 days.
+real memory is not recognition but reconstruction.
 
 ---
 
