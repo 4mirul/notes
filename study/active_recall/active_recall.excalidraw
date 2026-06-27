@@ -1,0 +1,1652 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "aGQc1RKUxlohPCpem0ydU",
+      "type": "text",
+      "x": 514.5873015873017,
+      "y": 162.3492063492065,
+      "width": 306.7794189453125,
+      "height": 150,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": null,
+      "seed": 2134650559,
+      "version": 277,
+      "versionNonce": 1145294168,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "zkHJ8gUMxRRKEkOSxoFNu",
+          "type": "arrow"
+        },
+        {
+          "id": "ma3l5Ynl1yrlD9m0YigZV",
+          "type": "arrow"
+        },
+        {
+          "id": "6SgNKh1dgEsHpX-VDI0AW",
+          "type": "arrow"
+        },
+        {
+          "id": "ouzI2iRfLJZaiWPn3puHO",
+          "type": "arrow"
+        },
+        {
+          "id": "dDfvcmBCECLv1ux7zGEXf",
+          "type": "arrow"
+        },
+        {
+          "id": "nI66bcmq4MrtFHYC0g1V3",
+          "type": "arrow"
+        },
+        {
+          "id": "aaEfIYBr0ce_yJlaX4icw",
+          "type": "arrow"
+        },
+        {
+          "id": "t0Vt6LqTHdoeO8-Me-0od",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1782555535471,
+      "link": null,
+      "locked": false,
+      "text": "to remember faster, retain\nlonger and recall under\npressure. focus on what you\ncan recall, what you can\nexplain, what survive after 3\ndays.",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "to remember faster, retain longer and recall under pressure. focus on what you can recall, what you can explain, what survive after 3 days.",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "3yxqiLukdwgrzbmAHMtf7",
+      "type": "text",
+      "x": 275.5555555555556,
+      "y": 48.888888888889,
+      "width": 115.95991516113281,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a2",
+      "roundness": null,
+      "seed": 235025535,
+      "version": 221,
+      "versionNonce": 718068312,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "aaEfIYBr0ce_yJlaX4icw",
+          "type": "arrow"
+        },
+        {
+          "id": "nUBzDkr_IujYhmsBklLR3",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1782552182030,
+      "link": null,
+      "locked": false,
+      "text": "active recall",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "active recall",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "vwp8ROLte3mKbn8VRQoot",
+      "type": "text",
+      "x": 60.44444444444446,
+      "y": 221.55555555555566,
+      "width": 243.8597869873047,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a3",
+      "roundness": null,
+      "seed": 1276169585,
+      "version": 308,
+      "versionNonce": 1795223384,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "t0Vt6LqTHdoeO8-Me-0od",
+          "type": "arrow"
+        },
+        {
+          "id": "K72joMYP-UGO0JHVOBqlE",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1782552784498,
+      "link": null,
+      "locked": false,
+      "text": "connect/meaning/pattern",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "connect/meaning/pattern",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "UnUFZ9c6qlRldyjP5td4z",
+      "type": "text",
+      "x": 628.8888888888888,
+      "y": 453.2222209506565,
+      "width": 74.4599609375,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a4",
+      "roundness": null,
+      "seed": 707052095,
+      "version": 165,
+      "versionNonce": 243256360,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "ma3l5Ynl1yrlD9m0YigZV",
+          "type": "arrow"
+        },
+        {
+          "id": "HryyPyXwB_LlgEMxM7wvk",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1782554564665,
+      "link": null,
+      "locked": false,
+      "text": "emotion",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "emotion",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "AloYBmoajLJ0ELt-hRbEQ",
+      "type": "text",
+      "x": 300.1111111111111,
+      "y": 416.1111098395453,
+      "width": 168.49986267089844,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a5",
+      "roundness": null,
+      "seed": 1043137567,
+      "version": 219,
+      "versionNonce": 138659368,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "zkHJ8gUMxRRKEkOSxoFNu",
+          "type": "arrow"
+        },
+        {
+          "id": "A79DvO9ql4QBT5DRrOsmI",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1782554439141,
+      "link": null,
+      "locked": false,
+      "text": "spaced repetition",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "spaced repetition",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "FskaAiJtq-nSTqc_jElby",
+      "type": "text",
+      "x": 929.4444444444446,
+      "y": 462.1111098395452,
+      "width": 192.5998992919922,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a6",
+      "roundness": null,
+      "seed": 427739295,
+      "version": 199,
+      "versionNonce": 1971445080,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "6SgNKh1dgEsHpX-VDI0AW",
+          "type": "arrow"
+        },
+        {
+          "id": "fT8EiEJgklHMcPwAhcgT_",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1782554805334,
+      "link": null,
+      "locked": false,
+      "text": "the blurting method",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "the blurting method",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "wFWqEw8-o3jOnyE4zKMuB",
+      "type": "text",
+      "x": 941.9999999999998,
+      "y": 64.99999872843432,
+      "width": 74.07992553710938,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a7",
+      "roundness": null,
+      "seed": 213919377,
+      "version": 71,
+      "versionNonce": 700369192,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "dDfvcmBCECLv1ux7zGEXf",
+          "type": "arrow"
+        },
+        {
+          "id": "fyKy_WfB7ak3utBl3ZFa6",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1782555261690,
+      "link": null,
+      "locked": false,
+      "text": "sleeping",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "sleeping",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "SSLzbxKJ25TacQoyQi8Sp",
+      "type": "text",
+      "x": 1024.222222222222,
+      "y": 251.66666539510095,
+      "width": 112.97991943359375,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a9",
+      "roundness": null,
+      "seed": 948200145,
+      "version": 52,
+      "versionNonce": 1018391896,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "ouzI2iRfLJZaiWPn3puHO",
+          "type": "arrow"
+        },
+        {
+          "id": "oKczBbDZYjFwNDi7EUdqZ",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1782555077135,
+      "link": null,
+      "locked": false,
+      "text": "environment",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "environment",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "gCl_fmE8P1z9IA4GE9UGG",
+      "type": "text",
+      "x": 589.7777777777778,
+      "y": 0.5555542839898919,
+      "width": 150.3398895263672,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aA",
+      "roundness": null,
+      "seed": 1239164657,
+      "version": 50,
+      "versionNonce": 1761830696,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "nI66bcmq4MrtFHYC0g1V3",
+          "type": "arrow"
+        },
+        {
+          "id": "dLiYVLCOjUIRYzGD5cHVH",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1782555368298,
+      "link": null,
+      "locked": false,
+      "text": "the interleaving",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "the interleaving",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "zkHJ8gUMxRRKEkOSxoFNu",
+      "type": "arrow",
+      "x": 506.14285841442296,
+      "y": 270.76892324237525,
+      "width": 105.94907543201225,
+      "height": 135.11996437494787,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aB",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1443433201,
+      "version": 239,
+      "versionNonce": 1108370008,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1782555535471,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -105.94907543201225,
+          135.11996437494787
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "aGQc1RKUxlohPCpem0ydU",
+        "focus": 0.6392016040428703,
+        "gap": 8.444443172878664
+      },
+      "endBinding": {
+        "elementId": "AloYBmoajLJ0ELt-hRbEQ",
+        "focus": -0.019747479842364062,
+        "gap": 10.222222222222172
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "ma3l5Ynl1yrlD9m0YigZV",
+      "type": "arrow",
+      "x": 653.7460283969601,
+      "y": 317.4603161887518,
+      "width": 1.3187258268521873,
+      "height": 124.20634920634927,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aC",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 203386897,
+      "version": 208,
+      "versionNonce": 1669486424,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1782555535471,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          1.3187258268521873,
+          124.20634920634927
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "aGQc1RKUxlohPCpem0ydU",
+        "focus": 0.0984373582902514,
+        "gap": 5.111109839545293
+      },
+      "endBinding": {
+        "elementId": "UnUFZ9c6qlRldyjP5td4z",
+        "focus": -0.2894238806643613,
+        "gap": 11.555555555555543
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "6SgNKh1dgEsHpX-VDI0AW",
+      "type": "arrow",
+      "x": 827.4678365354074,
+      "y": 316.3759439530795,
+      "width": 109.34488261753302,
+      "height": 135.82445338825335,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aD",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 973990929,
+      "version": 259,
+      "versionNonce": 1290644568,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1782555535471,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          109.34488261753302,
+          135.82445338825335
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "aGQc1RKUxlohPCpem0ydU",
+        "focus": -0.44736979575839114,
+        "gap": 6.101116002793219
+      },
+      "endBinding": {
+        "elementId": "FskaAiJtq-nSTqc_jElby",
+        "focus": -0.6683419740288098,
+        "gap": 9.91071249821232
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "ouzI2iRfLJZaiWPn3puHO",
+      "type": "arrow",
+      "x": 831.3650793650793,
+      "y": 256.27811975854166,
+      "width": 185.07936507936483,
+      "height": 5.14798621387115,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aE",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 890282303,
+      "version": 239,
+      "versionNonce": 2015781208,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1782555535471,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          185.07936507936483,
+          5.14798621387115
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "aGQc1RKUxlohPCpem0ydU",
+        "focus": 0.1850536499638711,
+        "gap": 9.998358832465101
+      },
+      "endBinding": {
+        "elementId": "SSLzbxKJ25TacQoyQi8Sp",
+        "focus": 0.040425730240982775,
+        "gap": 7.777777777777828
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "dDfvcmBCECLv1ux7zGEXf",
+      "type": "arrow",
+      "x": 829.0333884708466,
+      "y": 170.01958405861686,
+      "width": 106.29994486248654,
+      "height": 82.28291133060024,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aF",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 252588753,
+      "version": 258,
+      "versionNonce": 75527768,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1782555535472,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          106.29994486248654,
+          -82.28291133060024
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "aGQc1RKUxlohPCpem0ydU",
+        "focus": 0.29632186069273503,
+        "gap": 7.666667938232422
+      },
+      "endBinding": {
+        "elementId": "wFWqEw8-o3jOnyE4zKMuB",
+        "focus": 0.568679502829773,
+        "gap": 6.6666666666667425
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "nI66bcmq4MrtFHYC0g1V3",
+      "type": "arrow",
+      "x": 639.5993888142382,
+      "y": 153.571427299863,
+      "width": 13.483396109868863,
+      "height": 118.57142857142867,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aG",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1723017649,
+      "version": 200,
+      "versionNonce": 114289496,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1782555535472,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -13.483396109868863,
+          -118.57142857142867
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "aGQc1RKUxlohPCpem0ydU",
+        "focus": -0.11692894786232563,
+        "gap": 8.777779049343508
+      },
+      "endBinding": {
+        "elementId": "gCl_fmE8P1z9IA4GE9UGG",
+        "focus": 0.5398414675885104,
+        "gap": 9.444444444444429
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "aaEfIYBr0ce_yJlaX4icw",
+      "type": "arrow",
+      "x": 504.6984114268469,
+      "y": 176.64112110368615,
+      "width": 122.62531045997554,
+      "height": 99.4189001530296,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aH",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1929725841,
+      "version": 197,
+      "versionNonce": 1500037208,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1782555535472,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -122.62531045997554,
+          -99.4189001530296
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "aGQc1RKUxlohPCpem0ydU",
+        "focus": -0.3607390218556195,
+        "gap": 9.888890160454707
+      },
+      "endBinding": {
+        "elementId": "3yxqiLukdwgrzbmAHMtf7",
+        "focus": -0.39150569877966995,
+        "gap": 3.3333320617675497
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "t0Vt6LqTHdoeO8-Me-0od",
+      "type": "arrow",
+      "x": 505.4920634920635,
+      "y": 237.45078196866513,
+      "width": 195.26984126984127,
+      "height": 0.6511613241954421,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aI",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1513472913,
+      "version": 248,
+      "versionNonce": 1211436072,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1782555538406,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -195.26984126984127,
+          0.6511613241954421
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "aGQc1RKUxlohPCpem0ydU",
+        "focus": 0.005830353446044246,
+        "gap": 9.095238095238187
+      },
+      "endBinding": {
+        "elementId": "vwp8ROLte3mKbn8VRQoot",
+        "focus": 0.34654517934182283,
+        "gap": 5.917990790473084
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "uoAGW3qv6cMZaMKxluHmJ",
+      "type": "text",
+      "x": 17.823293050130133,
+      "y": -147.16666793823242,
+      "width": 275.2392578125,
+      "height": 125,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aJ",
+      "roundness": null,
+      "seed": 1248361560,
+      "version": 359,
+      "versionNonce": 273792040,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "nUBzDkr_IujYhmsBklLR3",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1782552183128,
+      "link": null,
+      "locked": false,
+      "text": "memory builds from\nreconstruction, the brain\nstrengthen the information\nthrough the retrieval not\nwhen receive it.",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "memory builds from reconstruction, the brain strengthen the information through the retrieval not when receive it.",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "nUBzDkr_IujYhmsBklLR3",
+      "type": "arrow",
+      "x": 285.41505283764513,
+      "y": 45.833332061767585,
+      "width": 79.86333901775888,
+      "height": 60.00000000000001,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aK",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1225491544,
+      "version": 72,
+      "versionNonce": 1243084584,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1782552183128,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -79.86333901775888,
+          -60.00000000000001
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "3yxqiLukdwgrzbmAHMtf7",
+        "focus": -0.37053411202096875,
+        "gap": 3.055556827121414
+      },
+      "endBinding": {
+        "elementId": "uoAGW3qv6cMZaMKxluHmJ",
+        "focus": 0.19750195307521481,
+        "gap": 8
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "6mIFj8keSszwgjZWvP00x",
+      "type": "text",
+      "x": -374.17670694986987,
+      "y": 111.83333206176758,
+      "width": 251.87982177734375,
+      "height": 200,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aM",
+      "roundness": null,
+      "seed": 993334312,
+      "version": 505,
+      "versionNonce": 1873885784,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "K72joMYP-UGO0JHVOBqlE",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1782554687541,
+      "link": null,
+      "locked": false,
+      "text": "brain loves incomplete\npattern, when there is\nincomplete infromation, it\ncreate mental tension\nand the brain wants to\nresolve it. study/learn\nwith diagram or story\nworks.",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "brain loves incomplete pattern, when there is incomplete infromation, it create mental tension and the brain wants to resolve it. study/learn with diagram or story works.",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "K72joMYP-UGO0JHVOBqlE",
+      "type": "arrow",
+      "x": 53.95191887370939,
+      "y": 233.11746422653954,
+      "width": 171.12862582357926,
+      "height": 30.666445773818793,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aN",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 778778200,
+      "version": 217,
+      "versionNonce": 1464348504,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1782554687542,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -171.12862582357926,
+          -30.666445773818793
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "vwp8ROLte3mKbn8VRQoot",
+        "focus": -0.6426599220603227,
+        "gap": 6.4925255707350535
+      },
+      "endBinding": {
+        "elementId": "6mIFj8keSszwgjZWvP00x",
+        "focus": -0.2681223983968672,
+        "gap": 5.12017822265625
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "RqCgEgYQoUq2Qe2ZnqFRa",
+      "type": "text",
+      "x": -226.17670694986987,
+      "y": 527.1666641235352,
+      "width": 355.439697265625,
+      "height": 225,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aP",
+      "roundness": null,
+      "seed": 30222888,
+      "version": 624,
+      "versionNonce": 314728232,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "A79DvO9ql4QBT5DRrOsmI",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1782554659487,
+      "link": null,
+      "locked": false,
+      "text": "the brain discarded 70%-80% new,\nunpracticed information within the\nfirst 24 hours.\nthats why memory need\nreinforcement = (recall + repeat).\nspaced repetition= the memory\nstrengten over time not in\npanic(cramming), so 1 hours in 3\ndays better than 3 hours in a day.",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "the brain discarded 70%-80% new, unpracticed information within the first 24 hours.\nthats why memory need reinforcement = (recall + repeat).\nspaced repetition= the memory strengten over time not in panic(cramming), so 1 hours in 3 days better than 3 hours in a day.",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "A79DvO9ql4QBT5DRrOsmI",
+      "type": "arrow",
+      "x": 295.8229331760734,
+      "y": 441.8947722789508,
+      "width": 192.80609385682158,
+      "height": 78.71158911020933,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aQ",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 2095202344,
+      "version": 66,
+      "versionNonce": 477903400,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1782554659488,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -192.80609385682158,
+          78.71158911020933
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "AloYBmoajLJ0ELt-hRbEQ",
+        "focus": 0.4847228149592495,
+        "gap": 4.288177935037688
+      },
+      "endBinding": {
+        "elementId": "RqCgEgYQoUq2Qe2ZnqFRa",
+        "focus": -0.3089628980298155,
+        "gap": 6.560302734375
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "nHpDU-YZGaj5KID0zLElb",
+      "type": "text",
+      "x": 419.82329305013013,
+      "y": 685.4999961853027,
+      "width": 452.61968994140625,
+      "height": 150,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aR",
+      "roundness": null,
+      "seed": 1601203544,
+      "version": 288,
+      "versionNonce": 963662680,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "HryyPyXwB_LlgEMxM7wvk",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1782554657720,
+      "link": null,
+      "locked": false,
+      "text": "the brain priotize emotional memories, thats\nwhy the old memories still vivid.\nlearn/study with emotion such as with\ncuriosity, teach others, etc.\nemotion increase attention, attention\nincrease encoding, encoding increase memory.",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "the brain priotize emotional memories, thats why the old memories still vivid.\nlearn/study with emotion such as with curiosity, teach others, etc.\nemotion increase attention, attention increase encoding, encoding increase memory.",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "HryyPyXwB_LlgEMxM7wvk",
+      "type": "arrow",
+      "x": 655.362014406854,
+      "y": 481.49999618530273,
+      "width": 21.85583166051083,
+      "height": 196.0000000000001,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aS",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 2140896088,
+      "version": 271,
+      "versionNonce": 733751384,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1782554657721,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -21.85583166051083,
+          196.0000000000001
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "UnUFZ9c6qlRldyjP5td4z",
+        "focus": 0.2293630232953261,
+        "gap": 3.277775234646242
+      },
+      "endBinding": {
+        "elementId": "nHpDU-YZGaj5KID0zLElb",
+        "focus": -0.0930494890186595,
+        "gap": 8
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "MUX7gGKouI9wWdfg2gbDn",
+      "type": "text",
+      "x": 1092.8232930501301,
+      "y": 588.833324432373,
+      "width": 390.0794677734375,
+      "height": 175,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aU",
+      "roundness": null,
+      "seed": 1913244200,
+      "version": 351,
+      "versionNonce": 1204733224,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "fT8EiEJgklHMcPwAhcgT_",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1782554804101,
+      "link": null,
+      "locked": false,
+      "text": "read note, close note, force brain to\nretrieve information and put it in the\npaper, compare with the note, then\nrepeat.\nthis combines active recall, retrieval\npractice, error correction, memory\nencoding.",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "read note, close note, force brain to retrieve information and put it in the paper, compare with the note, then repeat.\nthis combines active recall, retrieval practice, error correction, memory encoding.",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "fT8EiEJgklHMcPwAhcgT_",
+      "type": "arrow",
+      "x": 1039.9958452698793,
+      "y": 492.83332443237305,
+      "width": 105.8050363215225,
+      "height": 88,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aV",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 109657640,
+      "version": 50,
+      "versionNonce": 1216112472,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1782554805335,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          105.8050363215225,
+          88
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "FskaAiJtq-nSTqc_jElby",
+        "focus": 0.06986365289005028,
+        "gap": 5.722214592827868
+      },
+      "endBinding": {
+        "elementId": "MUX7gGKouI9wWdfg2gbDn",
+        "focus": -0.09479485665411211,
+        "gap": 8
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "pm8tl5VNcnHSnMV0rXmrX",
+      "type": "text",
+      "x": 1335.8232930501301,
+      "y": 225.83332443237305,
+      "width": 399.5397033691406,
+      "height": 250,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aW",
+      "roundness": null,
+      "seed": 2134879016,
+      "version": 592,
+      "versionNonce": 360685096,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "oKczBbDZYjFwNDi7EUdqZ",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1782555079556,
+      "link": null,
+      "locked": false,
+      "text": "the environment secretly trains the\nmemory. if study with noise or any\ndistractions then, you will learn the\ndistraction and attention to actual\nstudy material is shallow. protect the\n30mins~ study session aggressively and\nto enter deep memory encoding.\nmemory formation requires uninterupted\ninteraction.\n",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "the environment secretly trains the memory. if study with noise or any distractions then, you will learn the distraction and attention to actual study material is shallow. protect the 30mins~ study session aggressively and to enter deep memory encoding.\nmemory formation requires uninterupted interaction.\n",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "oKczBbDZYjFwNDi7EUdqZ",
+      "type": "arrow",
+      "x": 1142.8232930501301,
+      "y": 263.17253405662416,
+      "width": 185,
+      "height": 19.216663165371187,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aX",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 102557480,
+      "version": 104,
+      "versionNonce": 1933154600,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1782555079556,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          185,
+          19.216663165371187
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "SSLzbxKJ25TacQoyQi8Sp",
+        "focus": -0.4048236455490988,
+        "gap": 5.621151394314438
+      },
+      "endBinding": {
+        "elementId": "pm8tl5VNcnHSnMV0rXmrX",
+        "focus": 0.32136449531776135,
+        "gap": 8
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "ShEwYHJU9m-RQzSeBl8aM",
+      "type": "text",
+      "x": 1118.8232930501301,
+      "y": -118.16667556762695,
+      "width": 461.3992919921875,
+      "height": 150,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aY",
+      "roundness": null,
+      "seed": 1680852264,
+      "version": 365,
+      "versionNonce": 111976232,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "fyKy_WfB7ak3utBl3ZFa6",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1782555261690,
+      "link": null,
+      "locked": false,
+      "text": "sleep is part of memorization.\nthe brain finallize the memory during the sleep\nnot during the study.\nthe brain transfer important memories to long\nterm storage during sleep.\nsleep stabilize memories.",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "sleep is part of memorization.\nthe brain finallize the memory during the sleep not during the study.\nthe brain transfer important memories to long term storage during sleep.\nsleep stabilize memories.",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "fyKy_WfB7ak3utBl3ZFa6",
+      "type": "arrow",
+      "x": 1019.8232930501301,
+      "y": 63.83332443237305,
+      "width": 92,
+      "height": 70,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aZ",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 536878632,
+      "version": 32,
+      "versionNonce": 1773902936,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1782555261694,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          92,
+          -70
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "wFWqEw8-o3jOnyE4zKMuB",
+        "focus": 0.42681954602176725,
+        "gap": 3.92096024598962
+      },
+      "endBinding": {
+        "elementId": "ShEwYHJU9m-RQzSeBl8aM",
+        "focus": 0.5742110047651644,
+        "gap": 7
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "_6MXVXJlhwTOfv36qfWJS",
+      "type": "text",
+      "x": 383.82329305013013,
+      "y": -292.16667556762695,
+      "width": 579.3195190429688,
+      "height": 125,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aa",
+      "roundness": null,
+      "seed": 337389096,
+      "version": 367,
+      "versionNonce": 571078232,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "dLiYVLCOjUIRYzGD5cHVH",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1782555458787,
+      "link": null,
+      "locked": false,
+      "text": "train the brain with study different material every 4 hours\nfor example. this switching forces the brain to engage\nrepeatedly and work harder. brain adapt better with\ncontrol leaving.\n ",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "train the brain with study different material every 4 hours for example. this switching forces the brain to engage repeatedly and work harder. brain adapt better with control leaving.\n ",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "dLiYVLCOjUIRYzGD5cHVH",
+      "type": "arrow",
+      "x": 648.852279875486,
+      "y": -5.500007629394531,
+      "width": 0.1385591070564942,
+      "height": 152,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "ac",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 599864104,
+      "version": 169,
+      "versionNonce": 925461336,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1782555458788,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -0.1385591070564942,
+          -152
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "gCl_fmE8P1z9IA4GE9UGG",
+        "focus": -0.21386328172696972,
+        "gap": 6.055561913384423
+      },
+      "endBinding": {
+        "elementId": "_6MXVXJlhwTOfv36qfWJS",
+        "focus": 0.08572206634771211,
+        "gap": 9.666667938232422
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
