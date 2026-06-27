@@ -1,0 +1,9 @@
+CIS551 python fundamentals.
+
+python are versatile-general purpose programming language that can be used to design desktop applications, web applications and complex scientific applications.
+ideal for quick development because it can execute complex functions with less code than other languages.
+
+python has so much versatility. it cannot be mastered by a following a one-size-fits-all process.
+
+python is scripting language. means it designed to automate task on the computer.
+scripting language able to works with files and folders. 
